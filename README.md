@@ -160,6 +160,10 @@ HITOKOTO=false
 
 本项目仅用于 Python 脚本编写、自动化任务、数据抓取与 AI 接口调用等技术学习场景。彩票预测没有确定性，任何基于本脚本输出进行的决策均由使用者自行承担风险。
 
+## 致谢
+
+- [LINUX DO](https://linux.do) — 中文开发者社区，感谢社区里关于 AI 代理、技能、自媒体工作流程和内容生产实践的讨论。
+
 ## License
 
 本项目基于 MIT License 开源，详见 [LICENSE](LICENSE)。
