@@ -8,6 +8,8 @@
 | [`bilibili.py`](#bilibilipy) | B 站每日任务（漫画签到、分享、投币、观看） | 企业微信应用：纯文字 |
 | [`efuyou.py`](#efuyoupy) | e服药每日签到 | 企业微信应用：纯文字 |
 | [`anyrouter_signin.py`](#anyrouter_signinpy) | anyrouter.top 自动签到（多账号） | 企业微信应用：纯文字 |
+| [`fnnas.py`](#fnnaspy) | 飞牛 NAS 论坛签到 | 企业微信应用：纯文字 |
+| [`newapi.py`](#newapipy) | New API 站点通用签到（多站点） | 企业微信应用：纯文字 |
 
 ## 通用通知配置
 
@@ -276,6 +278,48 @@ anyrouter.top 自动签到青龙脚本，支持多账号，内置阿里云 WAF `
 
 ```text
 5 8 * * *
+```
+
+---
+
+# fnnas.py
+
+飞牛 NAS 论坛（club.fnnas.com）每日打卡青龙脚本。
+
+## 环境变量
+
+| 变量 | 说明 |
+| --- | --- |
+| `FNNAS_COOKIE` | 飞牛论坛 Cookie，必填。也兼容 `FNNASCLUB_COOKIE`。 |
+| `HITOKOTO` | 是否在通知末尾附加每日一言，默认 `true`。 |
+
+通知配置见[通用通知配置](#通用通知配置)。
+
+## 定时建议
+
+```text
+15 8 * * *
+```
+
+---
+
+# newapi.py
+
+New API 站点通用签到青龙脚本，支持多站点批量签到。
+
+## 环境变量
+
+| 变量 | 说明 |
+| --- | --- |
+| `NEW_API_TOKENS` | 必填，JSON 数组：`[{"name":"站点A","website":"https://a.example.com","user":"1234","session":"xxxx"}]`。 |
+| `HITOKOTO` | 是否在通知末尾附加每日一言，默认 `true`。 |
+
+通知配置见[通用通知配置](#通用通知配置)。
+
+## 定时建议
+
+```text
+20 8 * * *
 ```
 
 ---

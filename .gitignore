@@ -33,8 +33,6 @@ lottery_data.json
 Thumbs.db
 
 # Local-only scripts
-newapi.py
-fnnas.py
 sendNotify.js
 
 # Local check-in notes (may contain live tokens)
